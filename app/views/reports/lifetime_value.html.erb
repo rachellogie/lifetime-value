@@ -1,0 +1,20 @@
+<h1>Lifetime Values</h1>
+
+<table class="table">
+  <tr>
+    <th>
+      Name
+    </th>
+    <th>
+      Value
+    </th>
+  </tr>
+
+  <% @lifetime_values.each do |hash| %>
+  <tr>
+    <td><%= hash.keys.first %></td>
+    <td>$<%= (hash.values.first/100).to_money %></td>
+  </tr>
+    <% end %>
+
+</table>

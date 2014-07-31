@@ -19,8 +19,15 @@ def create_subscribers
   SubscriptionEvent.create!(
     user: user_11,
     event_type: 'subscribed',
-    date: Date.today.beginning_of_month - 6.months,
+    date: Date.today.beginning_of_month - 7.months,
     price_per_month_in_cents: 700,
+  )
+
+  SubscriptionEvent.create!(
+    user: user_11,
+    event_type: 'changed',
+    date: Date.today.beginning_of_month - 5.months,
+    price_per_month_in_cents: 900,
   )
 
   user_12 = User.create!(
@@ -33,13 +40,13 @@ def create_subscribers
   SubscriptionEvent.create!(
     user: user_12,
     event_type: 'subscribed',
-    date: Date.today.beginning_of_month - 14.months,
+    date: Date.today.beginning_of_month - 24.months,
     price_per_month_in_cents: 1000,
   )
   SubscriptionEvent.create!(
     user: user_12,
     event_type: 'unsubscribed',
-    date: Date.today.beginning_of_month - 13.months,
+    date: Date.today.beginning_of_month - 2.months,
     price_per_month_in_cents: 0,
   )
 

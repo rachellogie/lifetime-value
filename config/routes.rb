@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   post "signin" => "sessions#create"
   get "signout" => "sessions#destroy", as: :signout
   get "current_members" => "reports#current_members"
+  get "lifetime_value" => "reports#lifetime_value"
 end
