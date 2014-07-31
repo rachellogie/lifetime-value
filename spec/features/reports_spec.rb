@@ -17,6 +17,6 @@ feature 'reports' do
   scenario 'Users can see the lifetime value of each user' do
     click_on 'Lifetime Value'
     expect(page).to have_content "Miss Kip Torp"
-    expect(page).to have_content "68.00"
+    expect(page).to have_content "59.00"
   end
 end
